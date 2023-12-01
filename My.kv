@@ -1,0 +1,49 @@
+<Container>:
+    orientation: 'vertical'
+	spacing: 30
+    FloatLayout:
+        Label:
+            text: 'Программа один!'
+            pos_hint: {'x': 0.45, 'y': 0.9}
+            size_hint: 0.1, 0.1
+            color: 'orange'
+        TextInput:
+            text: ''
+            pos_hint: {'x': 0.1, 'y': 0.15}
+            size_hint: 0.6, 0.1
+            font_size: 15
+            hint_text: 'Введите вашу задачу'
+            hint_text_color: ('red')
+        Button:
+            pos_hint: {'x': 0.78, 'y': 0.15}
+            size_hint: 0.1, 0.1
+            text: 'Accept!'
+            color: ('magenta')
+            font_size: 20
+            background_color: ('cyan')
+        BoxLayout:
+            orientation: 'vertical'
+            size_hint_y: 1
+            Image:
+                source: 'imba.png'
+        Button:
+            text: 'Открыть \nсписок \nдел'
+            size_text: 10
+            background_color: 'blue'
+            size: (100, 100)
+            pos: (25, 450)
+            size_hint: None, None
+        Button:
+            text: 'Удалить все'
+            background_color: 'red'
+            size_text: 10
+            size: (100, 100)
+            pos: (25, 300)
+            size_hint: None, None
+        Button:
+            text: 'Посмотреть \nсписок'
+            size_text: 10
+            background_color: 'orange'
+            size: (100, 100)
+            pos: (25, 150)
+            size_hint: None, None
